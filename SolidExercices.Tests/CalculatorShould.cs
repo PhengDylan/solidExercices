@@ -45,5 +45,18 @@ namespace SolidExercices.Tests
             var reslutatfaux = calculator.Calculate("45*54");
             Check.That(reslutatfaux).IsNotEqualTo(45);
         }
+        [Test]
+        public void CalculateADiv()
+        {
+            var calculator = new Calculator();
+            var resultnormal = calculator.Calculate("2/2");
+            Check.That(resultnormal).IsEqualTo(1);
+            var resultvirgule = calculator.Calculate("8,6/4");
+            Check.That(resultvirgule).IsEqualTo(2.15m);
+            var resultatplusieurs = calculator.Calculate("100 / 4 / 5  ");
+            Check.That(resultatplusieurs).IsEqualTo(5);
+            var reslutatfaux = calculator.Calculate("45/54");
+            Check.That(reslutatfaux).IsNotEqualTo(45);
+        }
     }
 }

@@ -53,6 +53,18 @@ namespace SolidExercices
                     resultat = resultat * Convert.ToDecimal(tabString[i]);
                 }
             }
+            if (operationTrim.Contains('/') == true)
+            {
+                // 1 -Il faut séparer les opérations des nombres
+                var tabString = operationTrim.Split('/');
+
+                // 2- Convertir les différentes chaîne en type double et faire le calcule
+                resultat = Convert.ToDecimal(tabString[0]);
+                for (int i = 1; i < tabString.Length; i++)
+                {
+                    resultat = resultat / Convert.ToDecimal(tabString[i]);
+                }
+            }
 
             return resultat;
             // throw new NotImplementedException();
