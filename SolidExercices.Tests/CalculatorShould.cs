@@ -18,6 +18,7 @@ namespace SolidExercices.Tests
             var result3 = calculator.Calculate("1+70");
             Check.That(result3).IsNotEqualTo(45);
         }
+
         [Test]
         public void CalculateASub()
         {
@@ -29,6 +30,19 @@ namespace SolidExercices.Tests
             var resultatplusieurs = calculator.Calculate("100 - 35,4 - 4,6  ");
             Check.That(resultatplusieurs).IsEqualTo(60);
             var reslutatfaux = calculator.Calculate("45-54");
+            Check.That(reslutatfaux).IsNotEqualTo(45);
+        }
+        [Test]
+        public void CalculateAMul()
+        {
+            var calculator = new Calculator();
+            var resultnormal = calculator.Calculate("2*2");
+            Check.That(resultnormal).IsEqualTo(4);
+            var resultvirgule = calculator.Calculate("2,5*4");
+            Check.That(resultvirgule).IsEqualTo(10m);
+            var resultatplusieurs = calculator.Calculate("100 * 3 * 4  ");
+            Check.That(resultatplusieurs).IsEqualTo(1200);
+            var reslutatfaux = calculator.Calculate("45*54");
             Check.That(reslutatfaux).IsNotEqualTo(45);
         }
     }
