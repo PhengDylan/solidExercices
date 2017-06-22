@@ -17,9 +17,9 @@ A LA FIN DU TP: pensez à pousser vos commits sur votre compte GitHub et envoyer 
 Réponses aux questions posées
 -----------------------------
 
-Q1)
+Q1)Il est possible d'utiliser une classe qui va faire la gestion des 4 opérations. Cette classe prendra en paramètre la chaine de caractère 
 
-Q2)
+Q2)Le concept est le concept SOLID. Où chaque classe ont responsabilité unique ( un service unique ) 
 
 Q3)
 
