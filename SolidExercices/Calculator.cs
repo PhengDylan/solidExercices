@@ -13,16 +13,16 @@ namespace SolidExercices
         {
 
             decimal resultat = 0;
-            char[] _operation = {'+', '-', '*', '/'};
+            var _operation = new[] {'+', '-', '*', '/'};
             Calculation calcul = new Calculation() ;
             //On enlève tout les espaces possible dans le String
             var operationTrim = operation.Trim();
 
-            for (int index = 0; index < operation.Length; index++)
+            for (int index = 0; index < _operation.Length; index++)
                 {
-                    if (operationTrim.Contains(operation[index]) == true)
+                    if (operationTrim.Contains(_operation[index]) == true)
                     {                   
-                    var tabString = operationTrim.Split(operation[index]);
+                    var tabString = operationTrim.Split(_operation[index]);
                         resultat = (decimal) calcul.Calcul(index, tabString);
                     }
             }

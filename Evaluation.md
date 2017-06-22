@@ -19,9 +19,9 @@ Réponses aux questions posées
 
 Q1)Il est possible d'utiliser une classe qui va faire la gestion des 4 opérations. Cette classe prendra en paramètre la chaine de caractère 
 
-Q2)Le concept est le concept SOLID. Où chaque classe ont responsabilité unique ( un service unique ) 
+Q2)Le concept est le concept SOLID. Où chaque classe ont une responsabilité unique ( un service unique ) 
 
-Q3)
+Q3)On fait en sorte qu'une classe a une fonction donc c'est de la responsabilité unique
 
 Q4)
 

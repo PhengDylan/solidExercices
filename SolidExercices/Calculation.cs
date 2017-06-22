@@ -8,7 +8,7 @@ namespace SolidExercices
 {
     class Calculation
     {
-        private readonly List<Ioperation> _operation;
+        private readonly List<Ioperation> _operation = new List<Ioperation>();
         public Calculation()
         {
             _operation.Add(new SumOperation());
